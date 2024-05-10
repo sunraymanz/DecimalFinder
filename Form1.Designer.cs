@@ -38,6 +38,8 @@ namespace DecimalFinder
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.labelX = new System.Windows.Forms.Label();
+            this.labelY = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnConfirm
@@ -130,7 +132,7 @@ namespace DecimalFinder
             // label4
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(100, 130);
             this.label4.Margin = new System.Windows.Forms.Padding(0);
             this.label4.Name = "label4";
@@ -139,11 +141,33 @@ namespace DecimalFinder
             this.label4.Text = "0";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // labelX
+            // 
+            this.labelX.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelX.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX.Location = new System.Drawing.Point(62, 2);
+            this.labelX.Name = "labelX";
+            this.labelX.Size = new System.Drawing.Size(212, 25);
+            this.labelX.TabIndex = 9;
+            this.labelX.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelY
+            // 
+            this.labelY.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelY.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelY.Location = new System.Drawing.Point(298, 2);
+            this.labelY.Name = "labelY";
+            this.labelY.Size = new System.Drawing.Size(212, 25);
+            this.labelY.TabIndex = 10;
+            this.labelY.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 261);
+            this.Controls.Add(this.labelY);
+            this.Controls.Add(this.labelX);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label3);
@@ -171,6 +195,8 @@ namespace DecimalFinder
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label labelX;
+        private System.Windows.Forms.Label labelY;
     }
 }
 

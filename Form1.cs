@@ -24,21 +24,23 @@ namespace DecimalFinder
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            if (long.TryParse(textBox1.Text, out x)) label4.Text = "Input x = " + x;
+            if (long.TryParse(textBox1.Text, out x)) { label4.Text = "Input x = " + x;}
             else
             {
                 x = 0;
                 label4.Text = "Invalid Input x";
             }
+            labelX.Text = "X = " + x;
         }
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-            if (long.TryParse(textBox2.Text, out y)) label4.Text = "Input y = " + y;
+            if (long.TryParse(textBox2.Text, out y)) { label4.Text = "Input y = " + y;}
             else
             {
-                y = 0; 
+                y = 0;
                 label4.Text = "Invalid Input y";
             }
+            labelY.Text = "Y = " + y;
         }
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
@@ -59,7 +61,7 @@ namespace DecimalFinder
             }
         }
         private void btnConfirm_Click(object sender, EventArgs e)
-        {             
+        {          
             decimalNum = ValueAtPosition(x,y, position) ;
             if (decimalNum == -1)
             {
